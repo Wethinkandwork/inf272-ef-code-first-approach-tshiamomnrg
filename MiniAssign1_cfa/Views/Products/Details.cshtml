@@ -1,0 +1,58 @@
+﻿@model MiniAssign1_cfa.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Brand.Brand_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand.Brand_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.Category_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.Category_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModelYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModelYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ListPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ListPrice)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
